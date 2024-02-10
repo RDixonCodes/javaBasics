@@ -68,7 +68,9 @@ class Demo{
 
         // simplified version
         // String season = switch(month){
-        //     case 1,2,3 -> "spring";
+        //     case 1,2,3 -> {
+        //     yield "spring"
+        // };
 
         //     case 4,5,6 -> "summer";
 
@@ -99,7 +101,18 @@ class Demo{
     
 
     }
+    
+    //ternary operator
+    static int min(int x, int y){
+        int result = (x < y) ? x : y;
+        return result;
+    }
+    //or
+    // static int min(int x, int y){
+    //     return (x < y) ? x : y;
+    // }
 		
+
 	public static void main(String[] args) {	
 	  // Language Basics 1
 	  //print();				
@@ -117,7 +130,10 @@ class Demo{
 	  //charTypePromotion();
 	  //comparisonOperators();
       //logicalOperators();
-	  bitwiseOperators();
-	  System.out.println("The current season is: " + getSeason(0));
+    bitwiseOperators();
+    System.out.println("The current season is: " + getSeason(0));
+    System.out.println("\nTernary Operator ");
+    int min = min(9,3);
+    System.out.println("Min :" + min);
     }
 }

@@ -135,5 +135,36 @@ class Demo{
     System.out.println("\nTernary Operator ");
     int min = min(9,3);
     System.out.println("Min :" + min);
+    System.out.println("\nfor loop");
+    int[] iArr = {0,1,2,3,4,5,6,7,8,9};
+    // for(int i = 0; i < iArr.length; i++){
+    //     System.out.println(iArr[i]);
+    // }
+
+    // index swapping
+    // for(int i = 0, j = iArr.length - 1; i < j; i++, j--){
+    //     int temp = iArr[i];
+    //     iArr[i] = iArr[j];
+    //     iArr[j] = temp;
+    //     System.out.println(iArr[i] + " " + iArr[j]);
+
+    // }
+
+    // for(int i = 0; i < iArr.length; i++){
+
+    //     System.out.println(iArr[i] + " ");
+    // }
+
+    // counting divisors
+    System.out.println("\n Counting Divisors");
+    int x = 24;
+    int count = 0;
+    for(int i = 1; i <= x; i++){
+        if(x % i == 0){
+            System.out.println(i + " ");
+            count++;
+        }
+    }
+    System.out.println("\ndivisor count: " + count);
     }
 }

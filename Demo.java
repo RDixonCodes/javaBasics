@@ -186,6 +186,27 @@ class Demo {
 		System.out.println("\nmax: " + max);
     }	  
 
+    //for-each: convenient iteration
+
+    iArr = new int[] {0,1,2,3,4,5,6,7,8,9};
+
+    for(int i = 0; i < iArr.length; i++){
+        System.out.println(iArr[i] + " ");
+    }
+
+    //cleaner version of for each.
+    for(int i : iArr){
+        System.out.println(i + " ");
+    }
+
+    //parallel iteration
+    int[] dice1 = {1,2,3,4};
+    int[] dice2 = {1,2,3,4};
+
+    for(int i = 0, j = 0; i < dice1.length && j < dice2.length; i++, j++){
+        System.out.println(dice1[i] + " " + dice2[j]);
+    }
+
     }
     
 }

@@ -112,6 +112,22 @@ class Demo {
     //     return (x < y) ? x : y;
     // }
 		
+    //label breaking
+    static void labeledBreak(){
+        System.out.println("\nInside labeledBreak");
+        int num = 0;
+
+        outermost: for(int i = 0; i < 10; i++){
+            for(int j = 0; j < 10; j++){
+                if(i == 5 && j == 5){
+                    continue outermost;
+                }
+                num++;
+            }
+        }
+
+        System.out.println("num: " + num);
+    }
 
 	public static void main(String[] args) {	
 	  // Language Basics 1
@@ -130,6 +146,7 @@ class Demo {
 	  //charTypePromotion();
 	  //comparisonOperators();
       //logicalOperators();
+
     bitwiseOperators();
     System.out.println("The current season is: " + getSeason(0));
     System.out.println("\nTernary Operator ");
@@ -207,6 +224,9 @@ class Demo {
         System.out.println(dice1[i] + " " + dice2[j]);
     }
 
+    labeledBreak();
+
     }
+    
     
 }

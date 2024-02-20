@@ -19,9 +19,11 @@ public class Recursion {
         if(l == h){
             if(key == a[l]){
                 return l;
-            } else {
+            } else if(l > h) {
                 return -1;
             }
+        } else if(l > h) {
+            return -1;
         }
 
         int mid = (l + h)/2;

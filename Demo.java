@@ -1,3 +1,7 @@
+//import java.util.ArrayList;
+//import java.util.Date;
+
+
 class Demo {
 	static void bitwiseOperators() {
 	    System.out.println("\nInside bitwiseOperators ...");
@@ -146,6 +150,8 @@ class Demo {
 	  //charTypePromotion();
 	  //comparisonOperators();
       //logicalOperators();
+    //   java.util.Date date = new java.util.Date();
+    //   ArrayList list;
 
     bitwiseOperators();
     System.out.println("The current season is: " + getSeason(0));

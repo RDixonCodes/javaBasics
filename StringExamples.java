@@ -2,11 +2,23 @@ public class StringExamples {
     
     static void stringExamples() {
 		System.out.println("\nInside stringExamples ...");
-		String s = "hello world!";
+		String s = "hello " +  " world!";
 		System.out.println("s: " + s);
+
+        StringBuffer sb = new StringBuffer(s);
+        sb.append(" good").append(" morning :)");
+        System.out.println("sb: " + sb.toString());
+        System.out.println("sb.length: " + sb.length());
+        sb.delete(1, 5);
+        System.out.println("sb: " + sb.toString());
+        System.out.println("sb.length: " + sb.length());
+        sb.insert(1, "ey");
+        System.out.println("sb: " + sb.toString());
+        System.out.println("sb.length: " + sb.length());
+
 		
-		System.out.println("\ns.length(): " + s.length());
-		System.out.println("s.isEmpty(): " + s.isEmpty());
+		// System.out.println("\ns.length(): " + s.length());
+		// System.out.println("s.isEmpty(): " + s.isEmpty());
 		
 		// Comparison
 		// System.out.println("\ns.equals(\"HELLO WORLD!\"): " + s.equals("HELLO WORLD!"));

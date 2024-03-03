@@ -15,7 +15,6 @@ public class StringExamples {
         sb.insert(1, "ey");
         System.out.println("sb: " + sb.toString());
         System.out.println("sb.length: " + sb.length());
-
 		
 		// System.out.println("\ns.length(): " + s.length());
 		// System.out.println("s.isEmpty(): " + s.isEmpty());

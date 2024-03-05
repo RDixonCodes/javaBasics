@@ -1,4 +1,4 @@
-package monster_demo;
+
 public class Monster extends MonsterDemo {
     
 

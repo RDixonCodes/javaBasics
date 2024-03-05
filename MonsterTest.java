@@ -1,4 +1,4 @@
-package monster_demo;
+
 public class MonsterTest {
     
     public static void main(String [] args){

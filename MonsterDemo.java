@@ -1,4 +1,4 @@
-package monster_demo;
+
 public class MonsterDemo{
 
     protected int powerLevel = 100;

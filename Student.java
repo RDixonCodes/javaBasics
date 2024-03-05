@@ -15,11 +15,11 @@ class Student{
 	boolean intStudent;
 	double tuitionFees = 12000.0, intFees = 5000.0;
 	
-	Student(int newId, String name, String newGender, int newAge, long newPhone, double 					  newGPA, char newDegree){
+	Student(int newId, String name, String newGender, int newAge, long newPhone, double newGPA, char newDegree){
 	this(newId, name, newGender, newAge, newPhone, newGPA, newDegree, false);
 }
 
-	Student(int newId, String name, String newGender, int newAge, long newPhone, double 					  newGPA, char newDegree, boolean isInternational){
+	Student(int newId, String name, String newGender, int newAge, long newPhone, double newGPA, char newDegree, boolean isInternational){
 
 	id = newId;
 	this.name = name.toUpperCase();

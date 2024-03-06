@@ -104,6 +104,6 @@ public class CarPriceEstimator {
 
 	public static void main(String[] args) {
 		CarPriceEstimator carPriceEstimator = new CarPriceEstimator();
-		double salesPrice = carPriceEstimator.getSalePrice("ford ecosport", 2018, 60000.0, 2, true, false, true, false, false, true);		
+		double salePrice = carPriceEstimator.getSalePrice("ford ecosport", 2018, 60000.0, 2, true, false, true, false, false, true);		
 	}
 }

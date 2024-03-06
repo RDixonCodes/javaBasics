@@ -9,7 +9,7 @@ public class Monster extends MonsterDemo {
     public void throwRock(){
         powerLevel -= 10;
         System.out.println("\nProjectile thrown!");
-        System.out.println("Power level decreased to: " + this.powerLevel);
+        System.out.println("\\.Power level decreased to: " + this.powerLevel);
     }
 
     public void takeDamage(){

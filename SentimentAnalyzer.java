@@ -5,9 +5,10 @@ public class SentimentAnalyzer {
 	public static int[] detectProsAndCons(String review, String[][] featureSet, String[] posOpinionWords,
 			String[] negOpinionWords) {
 		int[] featureOpinions = new int[featureSet.length]; // output
-    review = review.toLowerCase();
-    nextFeature: for(int i = 0; i <featureSet.length; i++){
+        review = review.toLowerCase();
+        nextFeature: for(int i = 0; i <featureSet.length; i++){
         String[] features = featureSet[i];
+
         for(String feature : features){
             if(review.contains(feature)){
                 int opinion = getOpinionOnFeature(review, feature, posOpinionWords, negOpinionWords);
@@ -40,6 +41,7 @@ public class SentimentAnalyzer {
 	// Tip: Look at String API doc. Methods like indexOf, length, substring(beginIndex), startsWith can come into play
 	// Return 1 if positive opinion found, -1 for negative opinion, 0 for no opinion
 	// You can first look for positive opinion. If not found, only then you can look for negative opinion
+
 	private static int checkForWasPhrasePattern(String review, String feature, String[] posOpinionWords, String[] negOpinionWords) {
 		int opinion = 0;
 		String pattern = feature + " was ";
@@ -74,6 +76,7 @@ public class SentimentAnalyzer {
 		// for regular expression. So, escape it to make it work!!
 		String[] sentences = review.split("\\.");
 		int opinion = 0;
+
 		for(String sentence : sentences){
             int index = sentence.indexOf(feature);
 

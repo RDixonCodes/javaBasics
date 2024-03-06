@@ -25,7 +25,7 @@ public class StringExamples {
 		
 		// // Searching
 		// System.out.println("\ns.contains(\"HELLO WORLD!\"): " + s.contains("HELLO WORLD!"));
-		// System.out.println("s.contains(\"world!\"): " + s.contains("world!"));
+		System.out.println("s.contains(\"world!\"): " + s.contains("world!"));
 		// System.out.println("s.startsWith(\"HELLO WORLD!\"): " + s.startsWith("HELLO WORLD!"));
 		// System.out.println("s.startsWith(\"hello world!\"): " + s.startsWith("hello world!"));
 		// System.out.println("s.endsWith(\"!\"): " + s.endsWith("!"));

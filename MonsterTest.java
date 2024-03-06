@@ -1,6 +1,5 @@
 
 public class MonsterTest {
-    
     public static void main(String [] args){
 
         Monster m1 = new Monster(100);

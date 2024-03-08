@@ -7,8 +7,8 @@ class StudentTest{
 
 		Student student2 = new Student(1001, "Asher", "male", 18, 223_456_5436l, 3.8, 'E', 
 true);
-		student2.setGender("female");
-		
+		student2.setGender("fmale");
+
 		Student student3 = new Student(1002, "Sage", "female", 20, 223_486_0936l, 3.9, 'C', 
 true);
 

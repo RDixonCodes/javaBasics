@@ -7,12 +7,14 @@ class StudentTest{
 
 		Student student2 = new Student(1001, "Asher", "male", 18, 223_456_5436l, 3.8, 'E', 
 true);
-
+		student2.setGender("female");
+		
 		Student student3 = new Student(1002, "Sage", "female", 20, 223_486_0936l, 3.9, 'C', 
 true);
 
 		System.out.println("\nName of student1: " + student1.name);
 		System.out.println("\nName of student2: " + student2.name);
+		System.out.println("\nName of student2 gender: " + student2.getGender());
 		System.out.println("\nName of student3: " + student3.name);
 
 		student1.updateProfile("Jeremy");

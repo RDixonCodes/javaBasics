@@ -2,15 +2,29 @@
 class Student{
 
 	static int studentCount;
+	
 	int id = 1000;
 	String name = "Harper";
-	String gender = "male";
+	//example of information hiding.
+	private String gender = "male";
+
+	public String getGender(){
+		return gender;
+	}
+	public void setGender(String gender){
+		if(gender.equals("male") || gender.equals("female") || gender.equals("transgender")){
+			this.gender = gender;
+		} else {
+			throw new IllegalArgumentException("Illegal gender declaration");
+		}
+	}
+
+
 	int nextId = id + 2;
 	int age = 19;
 	long phone = 223_456_7890l;
 	char degree;
 	boolean international;
-	
 	double gpa = 3.6;
 	boolean intStudent;
 	double tuitionFees = 12000.0, intFees = 5000.0;

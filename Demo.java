@@ -143,13 +143,17 @@ class Demo {
         if(loadWeight > MAX_WEIGHT){
             int overage = loadWeight - MAX_WEIGHT;
             double overageValue = overageCost * overage + DUMP_FEE;
+
             System.out.println("Weighed amount: " + loadWeight + "lbs.");
             System.out.println("You're over the weight limit of " + MAX_WEIGHT + "lbs. Total dump fee: $" + overageValue);
+
             return overageValue;
 
         } else {
+
             System.out.println("\nYour current fees: $" + DUMP_FEE);
             return DUMP_FEE;
+            
         }
     }
 

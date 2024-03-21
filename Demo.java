@@ -137,12 +137,12 @@ class Demo {
         System.out.println("\nDump Estimator...");
 
         final int MAX_WEIGHT = 300;
-        final double DUMP_FEE = 18.00;
-        double overageCost = .85;
+        final double DUMP_FEE = 18.0;
+        float overageCost = .85f;
 
         if(loadWeight > MAX_WEIGHT){
-            int overage = loadWeight - MAX_WEIGHT;
-            double overageValue = overageCost * overage + DUMP_FEE;
+            final int OVERAGE = loadWeight - MAX_WEIGHT;
+            float overageValue = (float)(overageCost * OVERAGE + DUMP_FEE);
 
             System.out.println("Weighed amount: " + loadWeight + "lbs.");
             System.out.println("You're over the weight limit of " + MAX_WEIGHT + "lbs. Total dump fee: $" + overageValue);
@@ -153,7 +153,7 @@ class Demo {
 
             System.out.println("\nYour current fees: $" + DUMP_FEE);
             return DUMP_FEE;
-            
+
         }
     }
 
@@ -176,7 +176,7 @@ class Demo {
       //logicalOperators();
     //   java.util.Date date = new java.util.Date();
     //   ArrayList list;
-    dumpEstimator(300);
+    dumpEstimator(451);
     bitwiseOperators();
     System.out.println("The current season is: " + getSeason(0));
     System.out.println("\nTernary Operator ");

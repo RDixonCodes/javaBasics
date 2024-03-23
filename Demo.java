@@ -1,6 +1,7 @@
 //import java.util.ArrayList;
 //import java.util.Date;
 
+import java.util.ArrayList;
 
 class Demo {
 	static void bitwiseOperators() {
@@ -142,6 +143,7 @@ class Demo {
 
         if(loadWeight > MAX_WEIGHT){
             final int OVERAGE = loadWeight - MAX_WEIGHT;
+            //type cast value for correct output.
             float overageValue = (float)(overageCost * OVERAGE + DUMP_FEE);
 
             System.out.println("Weighed amount: " + loadWeight + "lbs.");
@@ -158,7 +160,51 @@ class Demo {
     }
 
 	public static void main(String[] args) {	
-	  // Language Basics 1
+
+        //autoboxing
+        Integer boxed = Integer.valueOf(25);
+        boxed++;
+        System.out.println(boxed);
+        // System.out.println("\nprinting parsed sentence");
+        // String data = "These 456 are some words";
+        // String[] items = data.split(" ");
+        // int first = Integer.parseInt(items[1]);
+        // String second = items[1];
+        // String third = items[2];
+        // System.out.println(items);
+        // System.out.println(first);
+        // System.out.println(second);
+        // System.out.println(third);
+        
+        //parsing  strings: parseType
+        String data = "4004 Effective Java Programming Language Guide   2007    T   4.9";
+        String[] items = data.split(" ");
+        System.out.println(items[0]);
+        long id = Long.parseLong(items[0]);//throws error?
+        String title = items[1];
+        int pubYear = Integer.parseInt(items[2]);
+        char genre = items[3].charAt(0);
+        double rating = Double.parseDouble(items[4]);
+
+        System.out.println("\nparsing example");
+
+        System.out.println(id);
+        System.out.println(title);
+        System.out.println(pubYear);
+        System.out.println(genre);
+        System.out.println(rating);
+
+        //utility methods
+        // boolean isLetter = Character.isLetter(genre);
+        // Character.isDigit(genre);
+        // Character.isLetterOrDigit(genre);
+        // Character.isUpperCase(genre);
+
+        //populate data structure
+        ArrayList<Double> idList = new ArrayList<>();
+        idList.add((double) 8);
+// 
+    // Language Basics 1
 	  //print();				
 	  //primitives();
 	  //typeCasting();
